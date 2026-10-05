@@ -1,0 +1,16 @@
+.app {
+  width: min(1126px, 100%);
+  margin: 0 auto;
+  min-height: 100svh;
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.28);
+  border-inline: 1px solid var(--border);
+}
+
+.app__main {
+  flex: 1;
+  display: grid;
+  place-items: center;
+  padding: 16px 20px 48px;
+}
