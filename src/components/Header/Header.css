@@ -25,7 +25,8 @@
   border-radius: 999px;
 }
 
-.nav a:hover {
+.nav a:hover,
+.nav a[aria-current='page'] {
   background: var(--purple-soft);
   color: var(--purple);
 }

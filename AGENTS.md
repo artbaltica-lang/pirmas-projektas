@@ -8,7 +8,7 @@ Lankytojo tekstai, `README.md`, `context.md`, `AL_RULES.md` ir šis failas rašo
 
 ## Kas jau yra
 
-Vienas puslapis, be maršrutų. Adresas: http://localhost:5173/
+Pagrindinis puslapis ir atskiras kontaktų puslapis. Adresas: http://localhost:5173/
 
 Svetainė yra autorės galerija jos paveikslams ir ikonoms. Paveikslai ir ikonos lieka atskiros sekcijos.
 
@@ -16,7 +16,8 @@ Svetainė yra autorės galerija jos paveikslams ir ikonoms. Paveikslai ir ikonos
 - Po šūkiu du mygtukai: Paveikslai ir Ikonos. Sekcijos kol kas be darbų
 - Šūkis: „Čia jūsų visada laukiame!“
 - Progreso juosta ir prisijungimo forma
-- Poraštė su dokumentacija ir kontaktais
+- Kontaktai atidaro atskirą puslapį su tuo pačiu meniu. Pradžia grąžina į pagrindinį puslapį
+- Poraštė su dokumentacija ir Vite bendruomene
 
 Visi lankytojo tekstai rašomi tik lietuvių kalba. Spalvos kol kas lieka iš `src/index.css`.
 

@@ -23,7 +23,7 @@ export default function SiteFooter() {
           </li>
         </ul>
       </section>
-      <section id="kontaktai">
+      <section id="bendruomene">
         <h2>Susisiekite su mumis</h2>
         <p>Prisijunkite prie Vite bendruomenės</p>
         <ul>

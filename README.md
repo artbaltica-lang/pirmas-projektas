@@ -2,7 +2,7 @@
 
 Čia jūsų visada laukiame!
 
-Pirmasis svetainės projektas: vienas puslapis su navigacija, prisijungimo forma ir progreso juosta. Tekstai lietuvių kalba. Sąsaja sukurta su React ir Vite.
+Pirmasis svetainės projektas: pagrindinis puslapis ir atskiras kontaktų puslapis. Tekstai lietuvių kalba. Sąsaja sukurta su React ir Vite.
 
 ## Kas yra puslapyje
 
@@ -10,6 +10,7 @@ Pirmasis svetainės projektas: vienas puslapis su navigacija, prisijungimo forma
 - **Paveikslai ir ikonos** atidaromi atskiromis mygtukais pagrindiniame lange. Darbų vietos kol kas tuščios.
 - **Progreso juosta** auga pildant formą: vardas duoda 50 %, slaptažodis iš bent 4 simbolių — dar 50 %.
 - **Prisijungimo forma** prašo vardo ir slaptažodžio. Jei laukas tuščias, parodoma klaida. Sėkmingai išsiuntus, pasveikinamas įvestas vardas.
+- **Kontaktai** atidaro atskirą puslapį. Meniu lieka viršuje, „Pradžia“ grąžina į pagrindinį puslapį.
 - **Poraštė** turi nuorodas į Vite ir JavaScript dokumentaciją bei Vite bendruomenę (GitHub, Discord).
 
 Prisijungimas vyksta tik naršyklėje. Duomenys niekur nesiunčiami.
@@ -49,7 +50,8 @@ src/
     ProgressBar/  progreso juosta
     JoinForm/     prisijungimo forma
     Gallery/      paveikslų ir ikonų sekcijos
-    SiteFooter/   dokumentacija ir kontaktai
+    Kontaktai/    kontaktų puslapis
+    SiteFooter/   dokumentacija ir Vite bendruomenė
   App.jsx
   main.jsx
 ```

@@ -36,7 +36,7 @@ Mygtukas, kuris atrodo kaip esami violetiniai mygtukai, naudoja klasę `button b
 
 ## Puslapis
 
-- Kol neprašoma kitaip, lieka vienas puslapis be atskirų maršrutų.
+- Kol neprašoma kitaip, lieka vienas puslapis be atskirų maršrutų. Išimtis: „Kontaktai“ yra atskiras vaizdas su ta pačia navigacija. „Pradžia“ grąžina į pagrindinį puslapį.
 - Nauja sekcija gauna `id`. Jei ji turi atsirasti meniu, nuoroda dedama į `Header` navigaciją: `href="#id"`.
 - Nuorodos į kitą svetainę atsidaro naujame lange ir turi `rel="noreferrer"`.
 - Šūkis „Čia jūsų visada laukiame!“ nekeičiamas be atskiro prašymo.
