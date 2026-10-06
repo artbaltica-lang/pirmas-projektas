@@ -1,0 +1,56 @@
+.profilis {
+  width: min(720px, calc(100% - 40px));
+  margin: 28px auto 48px;
+  padding: 32px;
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+}
+
+.profilis h1 {
+  margin: 0 0 16px;
+  color: var(--text-h);
+  font-size: clamp(32px, 6vw, 44px);
+  font-weight: 650;
+}
+
+.profilis p {
+  margin: 0;
+  color: var(--text);
+}
+
+.profilis__actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin: 24px 0;
+}
+
+.profilis__actions .button--purple {
+  margin-top: 0;
+  text-align: center;
+  text-decoration: none;
+}
+
+.profilis__link {
+  color: var(--purple);
+  font-weight: 650;
+  text-decoration: none;
+}
+
+.profilis__link:hover {
+  color: var(--purple-hover);
+}
+
+@media (max-width: 520px) {
+  .profilis {
+    width: min(720px, calc(100% - 32px));
+    margin-top: 20px;
+    padding: 24px;
+  }
+
+  .profilis__actions {
+    grid-template-columns: 1fr;
+  }
+}

@@ -4,12 +4,15 @@ import ProgressBar from './components/ProgressBar/ProgressBar.jsx'
 import JoinForm from './components/JoinForm/JoinForm.jsx'
 import Gallery from './components/Gallery/Gallery.jsx'
 import Kontaktai from './components/Kontaktai/Kontaktai.jsx'
+import Profilis from './components/Profilis/Profilis.jsx'
 import SiteFooter from './components/SiteFooter/SiteFooter.jsx'
 import { useEffect, useState } from 'react'
 import './App.css'
 
 function pageFromHash() {
-  return window.location.hash === '#kontaktai' ? 'kontaktai' : 'home'
+  if (window.location.hash === '#kontaktai') return 'kontaktai'
+  if (window.location.hash === '#profilis') return 'profilis'
+  return 'home'
 }
 
 export default function App() {
@@ -39,9 +42,11 @@ export default function App() {
 
   return (
     <div className="app">
-      <Header home={page === 'home'} />
+      <Header page={page} />
       {page === 'kontaktai' ? (
         <Kontaktai />
+      ) : page === 'profilis' ? (
+        <Profilis />
       ) : (
         <>
           <GalleryDoors />

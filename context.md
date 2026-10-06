@@ -10,7 +10,7 @@ Svetainės tekstai ir šis failas rašomi lietuvių kalba. HTML kalba: `lt`.
 
 ## Kas tai yra
 
-Svetainė „Pirmas projektas“ turi pagrindinį puslapį ir atskirą kontaktų puslapį. Šūkis: „Čia jūsų visada laukiame!“
+Svetainė „Pirmas projektas“ turi pagrindinį puslapį, profilį ir atskirą kontaktų puslapį. Šūkis: „Čia jūsų visada laukiame!“
 
 Sąsaja sukurta su React ir Vite. Tai autorės, dailininkės, galerija jos paveikslams ir ikonoms. Paveikslai ir ikonos rodomi atskirai. Darbų failų sekcijose dar nėra.
 
@@ -38,15 +38,16 @@ Git veikia. Šaka `master` seka `origin/master`. 2026-10-06 autorė išsaugojo k
 
 ## Puslapio sandara
 
-Navigacija lieka viršuje. Kontaktai atidaro atskirą puslapį, kitos nuorodos lieka pagrindiniame puslapyje.
+Navigacija lieka viršuje. Profilis ir Kontaktai atidaro atskirus puslapius, kitos nuorodos lieka pagrindiniame puslapyje.
 
-1. **Navigacija** lieka viršuje slenkant. Nuorodos: Pradžia (`#pradzia`), Paveikslai (`#paveikslai`), Ikonos (`#ikonos`), Prisijungimas (`#prisijungimas`), Dokumentacija (`#dokumentacija`), Kontaktai (`#kontaktai`). Iš kontaktų puslapio „Pradžia“ grąžina į pagrindinį.
+1. **Navigacija** lieka viršuje slenkant. Nuorodos: Pradžia (`#pradzia`), Profilis (`#profilis`), Paveikslai (`#paveikslai`), Ikonos (`#ikonos`), Prisijungimas (`#prisijungimas`), Dokumentacija (`#dokumentacija`), Kontaktai (`#kontaktai`). Iš profilio ir kontaktų „Pradžia“ grąžina į pagrindinį.
 2. **Antraštė** su JavaScript ir Vite ženklais, pavadinimu ir šūkiu. Po šūkiu du mygtukai: Paveikslai ir Ikonos.
 3. **Progreso juosta** nuo 0 iki 100, su žymomis 0, 25, 50, 75 ir 100.
 4. **Prisijungimo forma** laukuose „Vardas“ ir „Slaptažodis“.
 5. **Galerija** — dvi atskiros sekcijos, kol kas be darbų: Paveikslai ir Ikonos. Jų nejungti į vieną tinklelį.
-6. **Kontaktai** — atskiras puslapis lietuvišku tekstu apie paveikslus ir ikonas. Meniu lieka. El. pašto ir telefono autorė dar nedavė, todėl jų nerašyti.
-7. **Poraštė** su dokumentacija (Vite, JavaScript) ir Vite bendruomene (GitHub, Discord). Nuorodos atsidaro naujame lange.
+6. **Profilis** — atskiras puslapis. Antraštė „Profilis“, sakinys „Esu dailininkė. Tapau paveikslus ir rašau ikonas.“, mygtukai „Paveikslai“ ir „Ikonos“, nuoroda „Kontaktai“. Nuotraukos, vardo, el. pašto ir telefono nėra. Jų nepridėti, kol autorė nepasako.
+7. **Kontaktai** — atskiras puslapis lietuvišku tekstu apie paveikslus ir ikonas. Meniu lieka. El. pašto ir telefono autorė dar nedavė, todėl jų nerašyti.
+8. **Poraštė** su dokumentacija (Vite, JavaScript) ir Vite bendruomene (GitHub, Discord). Nuorodos atsidaro naujame lange.
    Apačioje rodoma automatiškai pagal einamuosius metus atnaujinama © eilutė.
 
 ## Kaip veikia forma
@@ -81,6 +82,7 @@ src/
     JoinForm/     prisijungimo forma
     Gallery/      paveikslų ir ikonų sekcijos
     Kontaktai/    kontaktų puslapis
+    Profilis/     profilio puslapis
     SiteFooter/   dokumentacija ir Vite bendruomenė
   App.jsx         sujungia dalis ir laiko progreso būseną
   App.css
@@ -118,3 +120,5 @@ Pokalbio pabaigoje įrašyti tik tai, kas pasikeitė: naujus puslapius, tekstus,
 2026-10-06 pagrindiniame lange pridėti mygtukai „Paveikslai“ ir „Ikonos“. Kiekvienas veda į savo tuščią sekciją. Spalvų, šūkio, formos tekstų ir progreso taisyklių nekeisti. Paveikslų ir ikonų nejungti į vieną sekciją. Lankytojo tekstų nerašyti kita kalba nei lietuvių. Prisijungimo nekelti į serverį, kol autorė nepaprašo. Jis turi likti patogus ir kompiuteryje, ir telefone.
 
 2026-10-06 „Kontaktai“ atidaro atskirą puslapį, ne poraštės sekciją. Meniu lieka, „Pradžia“ grąžina į pagrindinį puslapį. Kontaktų teksto nekeisti į kitą kalbą. El. pašto ir telefono nepridėti, kol autorė jų nepasako.
+
+2026-10-06 šakoje `profilis` pridėtas puslapis „Profilis“. Tekstas lieka „Esu dailininkė. Tapau paveikslus ir rašau ikonas.“ Nuotraukos, vardo, el. pašto ir telefono nepridėti, kol autorė nepasako. Šūkio, spalvų, formos ir progreso nekeisti.

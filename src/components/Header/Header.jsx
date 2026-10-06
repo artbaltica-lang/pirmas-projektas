@@ -2,16 +2,21 @@ import jsLogo from '../../assets/javascript.svg'
 import viteLogo from '../../assets/vite.svg'
 import './Header.css'
 
-export default function Header({ home = true }) {
+export default function Header({ page = 'home' }) {
+  const home = page === 'home'
+
   return (
     <>
       <nav className="nav" aria-label="Pagrindinė navigacija">
         <a href="#pradzia">Pradžia</a>
+        <a href="#profilis" aria-current={page === 'profilis' ? 'page' : undefined}>
+          Profilis
+        </a>
         <a href="#paveikslai">Paveikslai</a>
         <a href="#ikonos">Ikonos</a>
         <a href="#prisijungimas">Prisijungimas</a>
         <a href="#dokumentacija">Dokumentacija</a>
-        <a href="#kontaktai" aria-current={home ? undefined : 'page'}>
+        <a href="#kontaktai" aria-current={page === 'kontaktai' ? 'page' : undefined}>
           Kontaktai
         </a>
       </nav>
