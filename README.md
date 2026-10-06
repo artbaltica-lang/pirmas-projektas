@@ -6,7 +6,8 @@ Pirmasis svetainės projektas: vienas puslapis su navigacija, prisijungimo forma
 
 ## Kas yra puslapyje
 
-- **Navigacija** viršuje lieka matoma slenkant. Nuorodos veda į pradžią, prisijungimą, dokumentaciją ir kontaktus.
+- **Navigacija** viršuje lieka matoma slenkant. Nuorodos veda į pradžią, paveikslus, ikonas, prisijungimą, dokumentaciją ir kontaktus.
+- **Paveikslai ir ikonos** atidaromi atskiromis mygtukais pagrindiniame lange. Darbų vietos kol kas tuščios.
 - **Progreso juosta** auga pildant formą: vardas duoda 50 %, slaptažodis iš bent 4 simbolių — dar 50 %.
 - **Prisijungimo forma** prašo vardo ir slaptažodžio. Jei laukas tuščias, parodoma klaida. Sėkmingai išsiuntus, pasveikinamas įvestas vardas.
 - **Poraštė** turi nuorodas į Vite ir JavaScript dokumentaciją bei Vite bendruomenę (GitHub, Discord).
@@ -44,8 +45,10 @@ npm run preview
 src/
   components/
     Header/       navigacija ir šūkis
+    GalleryDoors/ mygtukai „Paveikslai“ ir „Ikonos“
     ProgressBar/  progreso juosta
     JoinForm/     prisijungimo forma
+    Gallery/      paveikslų ir ikonų sekcijos
     SiteFooter/   dokumentacija ir kontaktai
   App.jsx
   main.jsx

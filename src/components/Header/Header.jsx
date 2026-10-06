@@ -7,6 +7,8 @@ export default function Header() {
     <>
       <nav className="nav" aria-label="Pagrindinė navigacija">
         <a href="#pradzia">Pradžia</a>
+        <a href="#paveikslai">Paveikslai</a>
+        <a href="#ikonos">Ikonos</a>
         <a href="#prisijungimas">Prisijungimas</a>
         <a href="#dokumentacija">Dokumentacija</a>
         <a href="#kontaktai">Kontaktai</a>

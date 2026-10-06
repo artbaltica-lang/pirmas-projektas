@@ -1,0 +1,19 @@
+.gallery-doors {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  width: min(520px, calc(100% - 40px));
+  margin: 4px auto 8px;
+}
+
+.gallery-doors .button--purple {
+  margin-top: 0;
+  text-align: center;
+  text-decoration: none;
+}
+
+@media (max-width: 520px) {
+  .gallery-doors {
+    grid-template-columns: 1fr;
+  }
+}

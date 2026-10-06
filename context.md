@@ -1,6 +1,6 @@
 # Pirmas projektas — kontekstas
 
-Paskutinį kartą atnaujinta: 2026-10-01.
+Paskutinį kartą atnaujinta: 2026-10-06.
 
 Šis failas skirtas pokalbiams apie projektą. Jame laikoma tai, kas jau yra kode, ir tai, ką autorė pasakė atskirai. Kiekvieno pokalbio pabaigoje failas papildomas tik tais pakeitimais, kurie tikrai įvyko.
 
@@ -40,11 +40,12 @@ Git šiame kompiuteryje neįdiegtas, aplanke nėra repozitorijos.
 
 Vienas puslapis, be atskirų maršrutų. Navigacija veda į sekcijas tame pačiame puslapyje.
 
-1. **Navigacija** lieka viršuje slenkant. Nuorodos: Pradžia (`#pradzia`), Prisijungimas (`#prisijungimas`), Dokumentacija (`#dokumentacija`), Kontaktai (`#kontaktai`).
-2. **Antraštė** su JavaScript ir Vite ženklais, pavadinimu ir šūkiu.
+1. **Navigacija** lieka viršuje slenkant. Nuorodos: Pradžia (`#pradzia`), Paveikslai (`#paveikslai`), Ikonos (`#ikonos`), Prisijungimas (`#prisijungimas`), Dokumentacija (`#dokumentacija`), Kontaktai (`#kontaktai`).
+2. **Antraštė** su JavaScript ir Vite ženklais, pavadinimu ir šūkiu. Po šūkiu du mygtukai: Paveikslai ir Ikonos.
 3. **Progreso juosta** nuo 0 iki 100, su žymomis 0, 25, 50, 75 ir 100.
 4. **Prisijungimo forma** laukuose „Vardas“ ir „Slaptažodis“.
-5. **Poraštė** su dokumentacija (Vite, JavaScript) ir kontaktais (GitHub, Discord). Nuorodos atsidaro naujame lange.
+5. **Galerija** — dvi atskiros sekcijos, kol kas be darbų: Paveikslai ir Ikonos. Jų nejungti į vieną tinklelį.
+6. **Poraštė** su dokumentacija (Vite, JavaScript) ir kontaktais (GitHub, Discord). Nuorodos atsidaro naujame lange.
    Apačioje rodoma automatiškai pagal einamuosius metus atnaujinama © eilutė.
 
 ## Kaip veikia forma
@@ -74,8 +75,10 @@ Spalvos paimtos iš `src/index.css`. Tai dabartinė būsena, ne patvirtintas gal
 src/
   components/
     Header/       navigacija ir šūkis
+    GalleryDoors/ mygtukai „Paveikslai“ ir „Ikonos“
     ProgressBar/  progreso juosta
     JoinForm/     prisijungimo forma
+    Gallery/      paveikslų ir ikonų sekcijos
     SiteFooter/   dokumentacija ir kontaktai
   App.jsx         sujungia dalis ir laiko progreso būseną
   App.css
@@ -108,3 +111,5 @@ Autorė 2026-10-01 patvirtino, kad šis aprašas tinka. Projektas nėra baigtas:
 Pokalbio pabaigoje įrašyti tik tai, kas pasikeitė: naujus puslapius, tekstus, spalvas, elgseną ir tai, ko daugiau nebedaryti. Datą viršuje pakeisti. Spėjimų nerašyti.
 
 2026-10-01 poraštėje pridėta © eilutė, kurios metai nustatomi automatiškai. Metų reikšmės ranka nekeisti.
+
+2026-10-06 pagrindiniame lange pridėti mygtukai „Paveikslai“ ir „Ikonos“. Kiekvienas veda į savo tuščią sekciją. Spalvų, šūkio, formos tekstų ir progreso taisyklių nekeisti. Paveikslų ir ikonų nejungti į vieną sekciją. Prisijungimas lieka tik naršyklėje.

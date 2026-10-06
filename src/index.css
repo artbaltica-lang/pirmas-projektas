@@ -46,8 +46,10 @@ html {
 }
 
 #pradzia,
+#paveikslai,
+#ikonos,
 #prisijungimas,
 #dokumentacija,
 #kontaktai {
-  scroll-margin-top: 72px;
+  scroll-margin-top: 168px;
 }
