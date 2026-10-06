@@ -10,12 +10,17 @@ Lankytojo tekstai, `README.md`, `context.md`, `AL_RULES.md` ir šis failas rašo
 
 Vienas puslapis, be maršrutų. Adresas: http://localhost:5173/
 
-- Navigacija: Pradžia, Prisijungimas, Dokumentacija, Kontaktai
+Svetainė yra autorės galerija jos paveikslams ir ikonoms. Paveikslai ir ikonos lieka atskiros sekcijos.
+
+- Navigacija: Pradžia, Paveikslai, Ikonos, Prisijungimas, Dokumentacija, Kontaktai
+- Po šūkiu du mygtukai: Paveikslai ir Ikonos. Sekcijos kol kas be darbų
 - Šūkis: „Čia jūsų visada laukiame!“
 - Progreso juosta ir prisijungimo forma
 - Poraštė su dokumentacija ir kontaktais
 
-Prisijungimo duomenys lieka naršyklėje ir niekur nesiunčiami.
+Visi lankytojo tekstai rašomi tik lietuvių kalba. Spalvos kol kas lieka iš `src/index.css`.
+
+Prisijungimas lieka naršyklėje ir niekur nesiunčiamas. Jis turi veikti ir kompiuteryje, ir telefone.
 
 ## Kaip keisti
 

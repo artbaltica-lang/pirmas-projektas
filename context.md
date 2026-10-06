@@ -12,7 +12,7 @@ Svetainės tekstai ir šis failas rašomi lietuvių kalba. HTML kalba: `lt`.
 
 Vieno puslapio svetainė „Pirmas projektas“. Šūkis: „Čia jūsų visada laukiame!“
 
-Sąsaja sukurta su React ir Vite. Tai pirmasis svetainės projektas. Autorė jį toliau pildys naujais komponentais ir skriptais. Kam tiksliai svetainė skirta ir kas ja naudosis, dar nepasakyta.
+Sąsaja sukurta su React ir Vite. Tai autorės, dailininkės, galerija jos paveikslams ir ikonoms. Paveikslai ir ikonos rodomi atskirai. Darbų failų sekcijose dar nėra.
 
 ## Technologijos
 
@@ -34,7 +34,7 @@ Adresas: http://localhost:5173/
 - `npm run build` surenka svetainę į aplanką `dist`
 - `npm run preview` parodo jau surinktą versiją
 
-Git šiame kompiuteryje neįdiegtas, aplanke nėra repozitorijos.
+Git veikia. Šaka `master` seka `origin/master`. 2026-10-06 autorė išsaugojo komitą `Prideti migtukos paveikslams ir ikonoms`.
 
 ## Puslapio sandara
 
@@ -57,11 +57,11 @@ Duomenys lieka naršyklėje ir niekur nesiunčiami.
 - Tuščias vardas arba tuščias slaptažodis pateikiant formą rodo: „Įveskite vardą ir slaptažodį.“
 - Pavykus rodoma: „Sveiki, {vardas}! Jūs sėkmingai prisijungėte.“ Progresas tampa 100 %.
 
-Ar prisijungimas ir toliau turi likti tik naršyklėje, dar nepatvirtinta.
+2026-10-06 autorė patvirtino: prisijungimas kol kas lieka tik naršyklėje, be serverio. Jis turi veikti ir kompiuteryje, ir telefone. Duomenys niekur nesiunčiami.
 
 ## Dabartinis vaizdas
 
-Spalvos paimtos iš `src/index.css`. Tai dabartinė būsena, ne patvirtintas galutinis dizainas.
+Spalvos paimtos iš `src/index.css`. 2026-10-06 autorė pasakė, kad spalvos kol kas lieka. Šrifto ir išdėstymo ji atskirai nepatvirtino.
 
 - Tekstas: `#2d2150`, antraštės: `#1b1035`, prigesintas tekstas: `#6b5b8c`
 - Foną sudaro šviesiai mėlyna `#d8e9fb` ir alyvinis akcentas `#c9b6f2`
@@ -98,13 +98,14 @@ Autorė 2026-10-01 patvirtino, kad šis aprašas tinka. Projektas nėra baigtas:
 
 2026-10-01 autorė pradeda dirbti su projektu per Codex CLI. Trumpa instrukcija agentui yra `AGENTS.md`. Codex diegiamas kompiuteryje atskirai, ne į šio projekto aplanką.
 
-2026-10-05 GitHub paskyroje artbaltica-lang sukurta vieša repozitorija: https://github.com/artbaltica-lang/pirmas-projektas. Vietiniai projekto failai į ją dar neįkelti.
+2026-10-05 GitHub paskyroje artbaltica-lang sukurta vieša repozitorija: https://github.com/artbaltica-lang/pirmas-projektas.
+
+2026-10-06 autorė pasakė, kad svetainė yra jos galerija paveikslams ir ikonoms. Spalvos kol kas lieka. Prisijungimas kol kas tik naršyklėje, iš kompiuterio ir iš telefono. Visi lankytojo tekstai tik lietuvių kalba.
 
 ## Dar neatsakyta
 
-- Kam skirta svetainė ir kas lankytojas.
-- Ar dabartinės spalvos, šriftas ir išdėstymas lieka.
-- Ar prisijungimas lieka tik naršyklėje, be serverio.
+- Kas lankytojas, be pačios autorės.
+- Ar lieka dabartinis šriftas ir išdėstymas.
 
 ## Kaip papildyti šį failą
 
@@ -112,4 +113,4 @@ Pokalbio pabaigoje įrašyti tik tai, kas pasikeitė: naujus puslapius, tekstus,
 
 2026-10-01 poraštėje pridėta © eilutė, kurios metai nustatomi automatiškai. Metų reikšmės ranka nekeisti.
 
-2026-10-06 pagrindiniame lange pridėti mygtukai „Paveikslai“ ir „Ikonos“. Kiekvienas veda į savo tuščią sekciją. Spalvų, šūkio, formos tekstų ir progreso taisyklių nekeisti. Paveikslų ir ikonų nejungti į vieną sekciją. Prisijungimas lieka tik naršyklėje.
+2026-10-06 pagrindiniame lange pridėti mygtukai „Paveikslai“ ir „Ikonos“. Kiekvienas veda į savo tuščią sekciją. Spalvų, šūkio, formos tekstų ir progreso taisyklių nekeisti. Paveikslų ir ikonų nejungti į vieną sekciją. Lankytojo tekstų nerašyti kita kalba nei lietuvių. Prisijungimo nekelti į serverį, kol autorė nepaprašo. Jis turi likti patogus ir kompiuteryje, ir telefone.
