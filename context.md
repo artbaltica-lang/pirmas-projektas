@@ -1,6 +1,6 @@
 # Pirmas projektas — kontekstas
 
-Paskutinį kartą atnaujinta: 2026-10-06.
+Paskutinį kartą atnaujinta: 2026-10-08.
 
 Šis failas skirtas pokalbiams apie projektą. Jame laikoma tai, kas jau yra kode, ir tai, ką autorė pasakė atskirai. Kiekvieno pokalbio pabaigoje failas papildomas tik tais pakeitimais, kurie tikrai įvyko.
 
@@ -40,13 +40,14 @@ Git veikia. Šaka `master` seka `origin/master`. 2026-10-06 autorė išsaugojo k
 
 Navigacija lieka viršuje. Kontaktai atidaro atskirą puslapį, kitos nuorodos lieka pagrindiniame puslapyje.
 
-1. **Navigacija** lieka viršuje slenkant. Nuorodos: Pradžia (`#pradzia`), Paveikslai (`#paveikslai`), Ikonos (`#ikonos`), Prisijungimas (`#prisijungimas`), Dokumentacija (`#dokumentacija`), Kontaktai (`#kontaktai`). Iš kontaktų puslapio „Pradžia“ grąžina į pagrindinį.
+1. **Navigacija** lieka viršuje slenkant. Nuorodos: Pradžia (`#pradzia`), Paveikslai (`#paveikslai`), Ikonos (`#ikonos`), Užduotys (`#uzduotys`), Prisijungimas (`#prisijungimas`), Dokumentacija (`#dokumentacija`), Kontaktai (`#kontaktai`). Iš kontaktų puslapio „Pradžia“ grąžina į pagrindinį.
 2. **Antraštė** su JavaScript ir Vite ženklais, pavadinimu ir šūkiu. Po šūkiu du mygtukai: Paveikslai ir Ikonos.
 3. **Progreso juosta** nuo 0 iki 100, su žymomis 0, 25, 50, 75 ir 100.
 4. **Prisijungimo forma** laukuose „Vardas“ ir „Slaptažodis“.
 5. **Galerija** — dvi atskiros sekcijos, kol kas be darbų: Paveikslai ir Ikonos. Jų nejungti į vieną tinklelį.
-6. **Kontaktai** — atskiras puslapis lietuvišku tekstu apie paveikslus ir ikonas. Meniu lieka. El. pašto ir telefono autorė dar nedavė, todėl jų nerašyti.
-7. **Poraštė** su dokumentacija (Vite, JavaScript) ir Vite bendruomene (GitHub, Discord). Nuorodos atsidaro naujame lange.
+6. **Užduotys** — sąrašas iš https://testapi.io/api/artbaltica-lang/resource/tasklistnata. Laukas `tasklistnata1` rodomas, įrašomas, atnaujinamas (`PUT`) ir šalinamas.
+7. **Kontaktai** — atskiras puslapis lietuvišku tekstu apie paveikslus ir ikonas. Meniu lieka. El. pašto ir telefono autorė dar nedavė, todėl jų nerašyti.
+8. **Poraštė** su dokumentacija (Vite, JavaScript) ir Vite bendruomene (GitHub, Discord). Nuorodos atsidaro naujame lange.
    Apačioje rodoma automatiškai pagal einamuosius metus atnaujinama © eilutė.
 
 ## Kaip veikia forma
@@ -56,7 +57,7 @@ Duomenys lieka naršyklėje ir niekur nesiunčiami.
 - Įvestas vardas pakelia progresą iki 50 %.
 - Slaptažodis iš bent 4 simbolių prideda dar 50 %.
 - Tuščias vardas arba tuščias slaptažodis pateikiant formą rodo: „Įveskite vardą ir slaptažodį.“
-- Pavykus rodoma: „Sveiki, {vardas}! Jūs sėkmingai prisijungėte.“ Progresas tampa 100 %.
+- Pavykus rodoma: „Sveiki, {vardas}! Jūs sėkmingai prisijungėte.“ Progresas tampa 100 %. Po pasveikinimo yra mygtukas „Atsijungti“: jis išvalo laukus, paslepia pasveikinimą ir grąžina progresą į 0 %.
 
 2026-10-06 autorė patvirtino: prisijungimas kol kas lieka tik naršyklėje, be serverio. Jis turi veikti ir kompiuteryje, ir telefone. Duomenys niekur nesiunčiami.
 
@@ -80,6 +81,7 @@ src/
     ProgressBar/  progreso juosta
     JoinForm/     prisijungimo forma
     Gallery/      paveikslų ir ikonų sekcijos
+    Uzduotys/     užduočių sąrašas iš serverio
     Kontaktai/    kontaktų puslapis
     SiteFooter/   dokumentacija ir Vite bendruomenė
   App.jsx         sujungia dalis ir laiko progreso būseną
@@ -118,3 +120,9 @@ Pokalbio pabaigoje įrašyti tik tai, kas pasikeitė: naujus puslapius, tekstus,
 2026-10-06 pagrindiniame lange pridėti mygtukai „Paveikslai“ ir „Ikonos“. Kiekvienas veda į savo tuščią sekciją. Spalvų, šūkio, formos tekstų ir progreso taisyklių nekeisti. Paveikslų ir ikonų nejungti į vieną sekciją. Lankytojo tekstų nerašyti kita kalba nei lietuvių. Prisijungimo nekelti į serverį, kol autorė nepaprašo. Jis turi likti patogus ir kompiuteryje, ir telefone.
 
 2026-10-06 „Kontaktai“ atidaro atskirą puslapį, ne poraštės sekciją. Meniu lieka, „Pradžia“ grąžina į pagrindinį puslapį. Kontaktų teksto nekeisti į kitą kalbą. El. pašto ir telefono nepridėti, kol autorė jų nepasako.
+
+2026-10-08 pridėta sekcija „Užduotys“. Ji skaito, įrašo ir šalina įrašus adresu https://testapi.io/api/artbaltica-lang/resource/tasklistnata. Vienintelis privalomas laukas yra `tasklistnata1`. Jo vardo nekeisti, kol autorė nepasako kito. Prisijungimo vardas ir slaptažodis vis dar lieka naršyklėje ir į šį serverį nesiunčiami. Šūkio, spalvų, formos tekstų ir progreso taisyklių nekeisti.
+
+2026-10-08 prisijungus rodomas mygtukas „Atsijungti“. Jis grąžina tuščią formą ir 0 % progresą. Pasveikinimo teksto nekeisti.
+
+2026-10-08 užduotį galima atnaujinti mygtuku „Atnaujinti“, tada „Išsaugoti“ arba „Atšaukti“. Keitimas siunčiamas metodu `PUT` į tą patį adresą su įrašo `id`. Lauko vardo `tasklistnata1` nekeisti.

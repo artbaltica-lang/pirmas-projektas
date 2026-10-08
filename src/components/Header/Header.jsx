@@ -9,6 +9,7 @@ export default function Header({ home = true }) {
         <a href="#pradzia">Pradžia</a>
         <a href="#paveikslai">Paveikslai</a>
         <a href="#ikonos">Ikonos</a>
+        <a href="#uzduotys">Užduotys</a>
         <a href="#prisijungimas">Prisijungimas</a>
         <a href="#dokumentacija">Dokumentacija</a>
         <a href="#kontaktai" aria-current={home ? undefined : 'page'}>

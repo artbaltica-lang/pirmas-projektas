@@ -1,11 +1,14 @@
-.join-form,
-.join-form__success {
+.join-form {
   width: min(100%, 420px);
   background: var(--card);
   border-radius: 20px;
   padding: 32px;
   box-shadow: var(--shadow);
   text-align: left;
+}
+
+.join-form--done {
+  text-align: center;
 }
 
 .join-form h2 {
@@ -62,7 +65,7 @@
 }
 
 .join-form__success {
-  margin: 0;
+  margin: 0 0 8px;
   text-align: center;
   font-size: 20px;
   color: var(--success);

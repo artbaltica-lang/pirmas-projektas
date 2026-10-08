@@ -3,6 +3,7 @@ import GalleryDoors from './components/GalleryDoors/GalleryDoors.jsx'
 import ProgressBar from './components/ProgressBar/ProgressBar.jsx'
 import JoinForm from './components/JoinForm/JoinForm.jsx'
 import Gallery from './components/Gallery/Gallery.jsx'
+import Uzduotys from './components/Uzduotys/Uzduotys.jsx'
 import Kontaktai from './components/Kontaktai/Kontaktai.jsx'
 import SiteFooter from './components/SiteFooter/SiteFooter.jsx'
 import { useEffect, useState } from 'react'
@@ -50,6 +51,7 @@ export default function App() {
             <JoinForm onProgressChange={setProgress} />
           </main>
           <Gallery />
+          <Uzduotys />
           <SiteFooter />
         </>
       )}

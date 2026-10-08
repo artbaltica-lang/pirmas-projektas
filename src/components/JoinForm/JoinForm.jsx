@@ -28,8 +28,23 @@ export default function JoinForm({ onProgressChange }) {
     onProgressChange?.(100)
   }
 
+  function disconnect() {
+    setName('')
+    setPassword('')
+    setError('')
+    setSuccess('')
+    onProgressChange?.(0)
+  }
+
   if (success) {
-    return <p className="join-form__success">{success}</p>
+    return (
+      <div className="join-form join-form--done">
+        <p className="join-form__success">{success}</p>
+        <button className="button button--purple" type="button" onClick={disconnect}>
+          Atsijungti
+        </button>
+      </div>
+    )
   }
 
   return (

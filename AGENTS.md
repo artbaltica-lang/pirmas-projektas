@@ -12,7 +12,7 @@ Pagrindinis puslapis ir atskiras kontaktų puslapis. Adresas: http://localhost:5
 
 Svetainė yra autorės galerija jos paveikslams ir ikonoms. Paveikslai ir ikonos lieka atskiros sekcijos.
 
-- Navigacija: Pradžia, Paveikslai, Ikonos, Prisijungimas, Dokumentacija, Kontaktai
+- Navigacija: Pradžia, Paveikslai, Ikonos, Užduotys, Prisijungimas, Dokumentacija, Kontaktai
 - Po šūkiu du mygtukai: Paveikslai ir Ikonos. Sekcijos kol kas be darbų
 - Šūkis: „Čia jūsų visada laukiame!“
 - Progreso juosta ir prisijungimo forma
