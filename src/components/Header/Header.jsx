@@ -1,5 +1,4 @@
-import jsLogo from '../../assets/javascript.svg'
-import viteLogo from '../../assets/vite.svg'
+import banner from '../../assets/artbaltica-lt.jpg'
 import './Header.css'
 
 export default function Header({ home = true }) {
@@ -18,10 +17,7 @@ export default function Header({ home = true }) {
       </nav>
       {home ? (
         <header className="header" id="pradzia">
-          <div className="header__logos">
-            <img src={jsLogo} alt="JavaScript" />
-            <img src={viteLogo} alt="Vite" />
-          </div>
+          <img className="header__banner" src={banner} alt="ArtBaltica.com" />
           <h1>Pirmas projektas</h1>
           <p className="header__slogan">Čia jūsų visada laukiame!</p>
         </header>

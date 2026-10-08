@@ -41,7 +41,7 @@ Git veikia. Šaka `master` seka `origin/master`. 2026-10-06 autorė išsaugojo k
 Navigacija lieka viršuje. Kontaktai atidaro atskirą puslapį, kitos nuorodos lieka pagrindiniame puslapyje.
 
 1. **Navigacija** lieka viršuje slenkant. Nuorodos: Pradžia (`#pradzia`), Paveikslai (`#paveikslai`), Ikonos (`#ikonos`), Užduotys (`#uzduotys`), Prisijungimas (`#prisijungimas`), Dokumentacija (`#dokumentacija`), Kontaktai (`#kontaktai`). Iš kontaktų puslapio „Pradžia“ grąžina į pagrindinį.
-2. **Antraštė** su JavaScript ir Vite ženklais, pavadinimu ir šūkiu. Po šūkiu du mygtukai: Paveikslai ir Ikonos.
+2. **Antraštė** su ArtBaltica piešiniu, pavadinimu ir šūkiu. Po šūkiu du mygtukai: Paveikslai ir Ikonos. JavaScript ir Vite ženklų antraštėje nebėra.
 3. **Progreso juosta** nuo 0 iki 100, su žymomis 0, 25, 50, 75 ir 100.
 4. **Prisijungimo forma** laukuose „Vardas“ ir „Slaptažodis“.
 5. **Galerija** — dvi atskiros sekcijos, kol kas be darbų: Paveikslai ir Ikonos. Jų nejungti į vieną tinklelį.
@@ -124,6 +124,8 @@ Pokalbio pabaigoje įrašyti tik tai, kas pasikeitė: naujus puslapius, tekstus,
 2026-10-08 pridėta sekcija „Užduotys“. Ji skaito, įrašo ir šalina įrašus adresu https://testapi.io/api/artbaltica-lang/resource/tasklistnata. Vienintelis privalomas laukas yra `tasklistnata1`. Jo vardo nekeisti, kol autorė nepasako kito. Šūkio, spalvų, formos tekstų ir progreso taisyklių nekeisti.
 
 2026-10-08 prisijungimo vardas ir slaptažodis rašomi į `auth1` kaip `{"name","password"}`. Lauko vardo nekeisti. Slaptažodžio puslapyje nerodyti. „Atsijungti“ įrašo nesina.
+
+2026-10-08 antraštėje JavaScript ir Vite ženklus pakeitė piešinys. Tą patį vakarą autorė pakeitė jį versija su lietuvišku užrašu „Baltijos Art-meno galerija“: `src/assets/artbaltica-lt.jpg`. Šūkio nekeisti. Poraštės ženklų neliesti.
 
 2026-10-08 prisijungus rodomas mygtukas „Atsijungti“. Jis grąžina tuščią formą ir 0 % progresą. Pasveikinimo teksto nekeisti.
 

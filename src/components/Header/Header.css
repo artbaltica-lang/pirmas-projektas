@@ -38,17 +38,11 @@
   font-weight: 650;
 }
 
-.header__logos {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 14px;
-  margin-bottom: 8px;
-}
-
-.header__logos img {
-  height: 44px;
-  width: auto;
+.header__banner {
+  display: block;
+  width: min(100%, 920px);
+  height: auto;
+  margin: 0 auto 8px;
 }
 
 .header h1 {
