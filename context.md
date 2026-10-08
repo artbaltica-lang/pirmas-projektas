@@ -52,14 +52,14 @@ Navigacija lieka viršuje. Kontaktai atidaro atskirą puslapį, kitos nuorodos l
 
 ## Kaip veikia forma
 
-Duomenys lieka naršyklėje ir niekur nesiunčiami.
+Paspaudus „Prisijungti“, vardas ir slaptažodis įrašomi į https://testapi.io/api/artbaltica-lang/resource/auth. Lentelė turi tik teksto lauką `auth1`, todėl jame saugoma eilutė `{"name","password"}`. Atskirų stulpelių iš kodo pridėti negalima. Slaptažodis puslapyje nerodomas. „Atsijungti“ išvalo tik ekraną.
 
 - Įvestas vardas pakelia progresą iki 50 %.
 - Slaptažodis iš bent 4 simbolių prideda dar 50 %.
 - Tuščias vardas arba tuščias slaptažodis pateikiant formą rodo: „Įveskite vardą ir slaptažodį.“
 - Pavykus rodoma: „Sveiki, {vardas}! Jūs sėkmingai prisijungėte.“ Progresas tampa 100 %. Po pasveikinimo yra mygtukas „Atsijungti“: jis išvalo laukus, paslepia pasveikinimą ir grąžina progresą į 0 %.
 
-2026-10-06 autorė patvirtino: prisijungimas kol kas lieka tik naršyklėje, be serverio. Jis turi veikti ir kompiuteryje, ir telefone. Duomenys niekur nesiunčiami.
+2026-10-08 autorė paprašė vardą ir slaptažodį rašyti į `auth` lentelę, į lauką `auth1`. Prisijungimas turi veikti ir kompiuteryje, ir telefone.
 
 ## Dabartinis vaizdas
 
@@ -121,7 +121,9 @@ Pokalbio pabaigoje įrašyti tik tai, kas pasikeitė: naujus puslapius, tekstus,
 
 2026-10-06 „Kontaktai“ atidaro atskirą puslapį, ne poraštės sekciją. Meniu lieka, „Pradžia“ grąžina į pagrindinį puslapį. Kontaktų teksto nekeisti į kitą kalbą. El. pašto ir telefono nepridėti, kol autorė jų nepasako.
 
-2026-10-08 pridėta sekcija „Užduotys“. Ji skaito, įrašo ir šalina įrašus adresu https://testapi.io/api/artbaltica-lang/resource/tasklistnata. Vienintelis privalomas laukas yra `tasklistnata1`. Jo vardo nekeisti, kol autorė nepasako kito. Prisijungimo vardas ir slaptažodis vis dar lieka naršyklėje ir į šį serverį nesiunčiami. Šūkio, spalvų, formos tekstų ir progreso taisyklių nekeisti.
+2026-10-08 pridėta sekcija „Užduotys“. Ji skaito, įrašo ir šalina įrašus adresu https://testapi.io/api/artbaltica-lang/resource/tasklistnata. Vienintelis privalomas laukas yra `tasklistnata1`. Jo vardo nekeisti, kol autorė nepasako kito. Šūkio, spalvų, formos tekstų ir progreso taisyklių nekeisti.
+
+2026-10-08 prisijungimo vardas ir slaptažodis rašomi į `auth1` kaip `{"name","password"}`. Lauko vardo nekeisti. Slaptažodžio puslapyje nerodyti. „Atsijungti“ įrašo nesina.
 
 2026-10-08 prisijungus rodomas mygtukas „Atsijungti“. Jis grąžina tuščią formą ir 0 % progresą. Pasveikinimo teksto nekeisti.
 

@@ -1,11 +1,14 @@
 import { useState } from 'react'
 import './JoinForm.css'
 
+const AUTH_API = 'https://testapi.io/api/artbaltica-lang/resource/auth'
+
 export default function JoinForm({ onProgressChange }) {
   const [name, setName] = useState('')
   const [password, setPassword] = useState('')
   const [error, setError] = useState('')
   const [success, setSuccess] = useState('')
+  const [busy, setBusy] = useState(false)
 
   function updateProgress(nextName, nextPassword) {
     let next = 0
@@ -14,18 +17,37 @@ export default function JoinForm({ onProgressChange }) {
     onProgressChange?.(next)
   }
 
-  function handleSubmit(event) {
+  async function handleSubmit(event) {
     event.preventDefault()
+    const trimmedName = name.trim()
 
-    if (!name.trim() || !password) {
+    if (!trimmedName || !password) {
       setError('Įveskite vardą ir slaptažodį.')
       setSuccess('')
       return
     }
 
+    setBusy(true)
     setError('')
-    setSuccess(`Sveiki, ${name.trim()}! Jūs sėkmingai prisijungėte.`)
-    onProgressChange?.(100)
+    try {
+      const response = await fetch(AUTH_API, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: JSON.stringify({
+          auth1: JSON.stringify({ name: trimmedName, password }),
+        }),
+      })
+      if (!response.ok) throw new Error('save')
+      setSuccess(`Sveiki, ${trimmedName}! Jūs sėkmingai prisijungėte.`)
+      onProgressChange?.(100)
+    } catch {
+      setError('Nepavyko išsaugoti duomenų.')
+    } finally {
+      setBusy(false)
+    }
   }
 
   function disconnect() {
@@ -89,7 +111,7 @@ export default function JoinForm({ onProgressChange }) {
 
       {error ? <p className="join-form__error">{error}</p> : null}
 
-      <button className="button button--purple" type="submit">
+      <button className="button button--purple" type="submit" disabled={busy}>
         Prisijungti
       </button>
     </form>

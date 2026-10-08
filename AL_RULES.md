@@ -43,7 +43,7 @@ Mygtukas, kuris atrodo kaip esami violetiniai mygtukai, naudoja klasę `button b
 
 ## Forma ir progresas
 
-- Vardas ir slaptažodis lieka naršyklėje. Duomenys niekur nesiunčiami, kol autorė nepaprašo serverio.
+- Paspaudus „Prisijungti“, vardas ir slaptažodis įrašomi į `auth` lentelės lauką `auth1`. Slaptažodžio puslapyje nerodyti. „Atsijungti“ serverio įrašo netrina.
 - Vardas duoda 50 % progreso. Slaptažodis iš bent 4 simbolių duoda dar 50 %.
 - Tušti laukai rodo: „Įveskite vardą ir slaptažodį.“
 - Pavykus rodoma: „Sveiki, {vardas}! Jūs sėkmingai prisijungėte.“

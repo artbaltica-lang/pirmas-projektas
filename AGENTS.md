@@ -21,7 +21,7 @@ Svetainė yra autorės galerija jos paveikslams ir ikonoms. Paveikslai ir ikonos
 
 Visi lankytojo tekstai rašomi tik lietuvių kalba. Spalvos kol kas lieka iš `src/index.css`.
 
-Prisijungimas lieka naršyklėje ir niekur nesiunčiamas. Jis turi veikti ir kompiuteryje, ir telefone.
+Prisijungus vardas ir slaptažodis įrašomi į `auth` lauką `auth1`. Slaptažodis puslapyje nerodomas. Prisijungimas turi veikti ir kompiuteryje, ir telefone.
 
 ## Kaip keisti
 
