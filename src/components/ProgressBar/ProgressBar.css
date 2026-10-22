@@ -17,13 +17,13 @@
 
 .progress__value {
   font-weight: 700;
-  color: var(--purple);
+  color: var(--ink);
 }
 
 .progress__track {
   height: 16px;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 250, 243, 0.8);
   border: 1px solid var(--border);
   overflow: hidden;
 }
@@ -31,7 +31,7 @@
 .progress__fill {
   height: 100%;
   border-radius: inherit;
-  background: linear-gradient(90deg, #a78bfa, var(--purple));
+  background: linear-gradient(90deg, #e6c98a, #a67c52);
   transition: width 0.35s ease;
 }
 
@@ -44,6 +44,6 @@
 }
 
 .progress__scale .is-active {
-  color: var(--purple);
+  color: var(--ink);
   font-weight: 700;
 }

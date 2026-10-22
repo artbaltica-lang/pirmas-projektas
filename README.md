@@ -43,6 +43,8 @@ npm run preview
 
 ## Aplankai
 
+Spalvų skill su sena ir nauja gama: `.cursor/skills/galerijos-spalvos/`.
+
 ```
 src/
   components/

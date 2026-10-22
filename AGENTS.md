@@ -19,9 +19,13 @@ Svetainė yra autorės galerija jos paveikslams ir ikonoms. Paveikslai ir ikonos
 - Kontaktai atidaro atskirą puslapį su tuo pačiu meniu. Pradžia grąžina į pagrindinį puslapį
 - Poraštė su dokumentacija ir Vite bendruomene
 
-Visi lankytojo tekstai rašomi tik lietuvių kalba. Spalvos kol kas lieka iš `src/index.css`.
+Visi lankytojo tekstai rašomi tik lietuvių kalba. Spalvos imamos iš `src/index.css` ir dera prie ArtBaltica piešinio: smėlio fonas, šviesiai rudi mygtukai.
 
 Prisijungus vardas ir slaptažodis įrašomi į `auth` lauką `auth1`. Slaptažodis puslapyje nerodomas. Prisijungimas turi veikti ir kompiuteryje, ir telefone.
+
+## Skill
+
+Projekto skill yra `.cursor/skills/galerijos-spalvos/`. Į naują skill leidžiama perkelti duomenis iš seno projekto: ankstesnes spalvas, tekstus ir aprašus, kurie jau yra šiame projekte. Senų duomenų iš skill failų netrinti, kai įrašomi nauji.
 
 ## Kaip keisti
 
