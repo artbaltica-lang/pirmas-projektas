@@ -140,3 +140,5 @@ Pokalbio pabaigoje įrašyti tik tai, kas pasikeitė: naujus puslapius, tekstus,
 2026-10-22 iš `src/assets/artbaltica-lt.jpg` apačios kairėje nuimtos trys vėliavėlės. Ruda juosta palikta. Likusio piešinio nekeisti.
 
 2026-10-22 šūkis „Čia jūsų visada laukiame!“ nuleistas žemiau antraštės „Pirmas projektas“. Šūkio teksto nekeisti.
+
+2026-10-22 svetainė įkelta į Vercel: https://pirmas-projektas.vercel.app/ Projektas sujungtas su GitHub repozitorija. Supabase šiame projekte nėra: užduotys ir prisijungimas lieka testapi.io.
