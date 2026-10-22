@@ -25,14 +25,15 @@ src/components/KomponentoVardas/
 
 ## Spalvos ir šriftas
 
-Naujos spalvos nekuriamos, kol autorė nepasako kitaip. Naudojami kintamieji iš `src/index.css`:
+Spalvos imamos iš `src/index.css`. 2026-10-22 autorė paprašė smėlio gamos pagal ArtBaltica piešinį. Mygtukai šviesiai rudi.
 
 - tekstas `--text`, antraštės `--text-h`, prigesintas tekstas `--muted`
 - fonas `--bg` ir `--bg-accent`
-- mygtukai `--purple` ir `--purple-hover`
+- mygtukai `--purple` ir `--purple-hover`, mygtuko tekstas `--button-text`
+- nuorodos ir šūkis `--ink`
 - šriftas `--sans`
 
-Mygtukas, kuris atrodo kaip esami violetiniai mygtukai, naudoja klasę `button button--purple`.
+Klasės vardas lieka `button button--purple`. Senoji violetinė gama išsaugota skill faile ir į puslapį negrąžinama, kol autorė nepaprašo.
 
 ## Puslapis
 

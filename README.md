@@ -27,6 +27,8 @@ npm run dev
 
 Svetainė atsidaro adresu [http://localhost:5173/](http://localhost:5173/).
 
+Viešas adresas: [https://pirmas-projektas.vercel.app/](https://pirmas-projektas.vercel.app/)
+
 ## Kitos komandos
 
 ```bash
@@ -42,6 +44,8 @@ npm run preview
 - Vite 8
 
 ## Aplankai
+
+Spalvų skill su sena ir nauja gama: `.cursor/skills/galerijos-spalvos/`.
 
 ```
 src/

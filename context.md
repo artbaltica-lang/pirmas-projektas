@@ -1,6 +1,6 @@
 # Pirmas projektas — kontekstas
 
-Paskutinį kartą atnaujinta: 2026-10-08.
+Paskutinį kartą atnaujinta: 2026-10-22.
 
 Šis failas skirtas pokalbiams apie projektą. Jame laikoma tai, kas jau yra kode, ir tai, ką autorė pasakė atskirai. Kiekvieno pokalbio pabaigoje failas papildomas tik tais pakeitimais, kurie tikrai įvyko.
 
@@ -63,13 +63,16 @@ Paspaudus „Prisijungti“, vardas ir slaptažodis įrašomi į https://testapi
 
 ## Dabartinis vaizdas
 
-Spalvos paimtos iš `src/index.css`. 2026-10-06 autorė pasakė, kad spalvos kol kas lieka. Šrifto ir išdėstymo ji atskirai nepatvirtino.
+2026-10-22 autorė paprašė spalvų, derančių prie ArtBaltica piešinio. Šriftas ir išdėstymas liko tie patys.
 
-- Tekstas: `#2d2150`, antraštės: `#1b1035`, prigesintas tekstas: `#6b5b8c`
-- Foną sudaro šviesiai mėlyna `#d8e9fb` ir alyvinis akcentas `#c9b6f2`
-- Mygtukai ir nuorodos: violetinė `#7c3aed`, užvedus `#6d28d9`
+- Tekstas: `#4a3424`, antraštės: `#2c1c12`, prigesintas tekstas: `#7a624e`
+- Foną sudaro smėlio `#f4ead8` ir šiltas akcentas `#e7d3ae`
+- Mygtukai šviesiai rudi `#c4a574`, užvedus `#b08d58`, tekstas ant mygtuko `#2c1c12`
+- Šūkis ir tekstinės nuorodos: `#8a5a32`
 - Šriftas: `system-ui`, Segoe UI, Roboto
 - Bazinis dydis: 18px
+
+Senoji violetinė gama neištrinta. Ji ir naujoji laikomos `.cursor/skills/galerijos-spalvos/palettes.md`.
 
 ## Failai
 
@@ -88,6 +91,7 @@ src/
   App.css
   main.jsx
   index.css       spalvos ir bazinis tekstas
+.cursor/skills/galerijos-spalvos/   sena ir nauja spalvų gama
 README.md         kaip paleisti projektą
 context.md        šis failas
 AL_RULES.md       instrukcijos ir taisyklės naujiems komponentams
@@ -130,3 +134,11 @@ Pokalbio pabaigoje įrašyti tik tai, kas pasikeitė: naujus puslapius, tekstus,
 2026-10-08 prisijungus rodomas mygtukas „Atsijungti“. Jis grąžina tuščią formą ir 0 % progresą. Pasveikinimo teksto nekeisti.
 
 2026-10-08 užduotį galima atnaujinti mygtuku „Atnaujinti“, tada „Išsaugoti“ arba „Atšaukti“. Keitimas siunčiamas metodu `PUT` į tą patį adresą su įrašo `id`. Lauko vardo `tasklistnata1` nekeisti.
+
+2026-10-22 spalvos pakeistos į smėlio ir šviesiai rudą gamą pagal `src/assets/artbaltica-lt.jpg`. Mygtukų klasės vardo `button--purple` nekeisti. Senoji violetinė gama palikta skill faile `.cursor/skills/galerijos-spalvos/palettes.md` ir į puslapį negrąžinama, kol autorė nepaprašo. Šūkio, formos tekstų ir progreso taisyklių nekeisti.
+
+2026-10-22 iš `src/assets/artbaltica-lt.jpg` apačios kairėje nuimtos trys vėliavėlės. Ruda juosta palikta. Likusio piešinio nekeisti.
+
+2026-10-22 šūkis „Čia jūsų visada laukiame!“ nuleistas žemiau antraštės „Pirmas projektas“. Šūkio teksto nekeisti.
+
+2026-10-22 svetainė įkelta į Vercel: https://pirmas-projektas.vercel.app/ Projektas sujungtas su GitHub repozitorija. Supabase šiame projekte nėra: užduotys ir prisijungimas lieka testapi.io.

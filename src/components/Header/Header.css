@@ -12,7 +12,7 @@
   flex-wrap: wrap;
   gap: 6px 8px;
   padding: 14px 20px;
-  background: rgba(255, 255, 255, 0.88);
+  background: var(--nav);
   border-bottom: 1px solid var(--border);
   backdrop-filter: blur(8px);
 }
@@ -28,12 +28,12 @@
 .nav a:hover,
 .nav a[aria-current='page'] {
   background: var(--purple-soft);
-  color: var(--purple);
+  color: var(--ink);
 }
 
-.header__slogan {
-  margin: 10px 0 0;
-  color: var(--purple);
+.header p.header__slogan {
+  margin: 40px 0 0;
+  color: var(--ink);
   font-size: 1.2rem;
   font-weight: 650;
 }
@@ -46,7 +46,7 @@
 }
 
 .header h1 {
-  margin: 12px 0 8px;
+  margin: 12px 0 0;
   font-size: clamp(32px, 6vw, 52px);
   font-weight: 650;
   color: var(--text-h);

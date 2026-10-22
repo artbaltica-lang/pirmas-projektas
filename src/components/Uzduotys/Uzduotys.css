@@ -36,11 +36,11 @@
   border-radius: 12px;
   font: inherit;
   color: var(--text);
-  background: #f8f4ff;
+  background: var(--field);
 }
 
 .uzduotys__row input:focus {
-  outline: 2px solid var(--purple);
+  outline: 2px solid var(--ink);
   outline-offset: 2px;
 }
 
@@ -55,7 +55,7 @@
   border: 0;
   border-radius: 12px;
   font-weight: 650;
-  color: #fff;
+  color: var(--button-text);
   background: var(--purple);
 }
 
@@ -104,11 +104,11 @@
   border-radius: 12px;
   font: inherit;
   color: var(--text);
-  background: #f8f4ff;
+  background: var(--field);
 }
 
 .uzduotys__edit:focus {
-  outline: 2px solid var(--purple);
+  outline: 2px solid var(--ink);
   outline-offset: 2px;
 }
 
@@ -122,12 +122,12 @@
   padding: 0;
   border: 0;
   background: transparent;
-  color: var(--purple);
+  color: var(--ink);
   font-weight: 650;
 }
 
 .uzduotys__action:hover {
-  color: var(--purple-hover);
+  color: var(--text-h);
 }
 
 @media (max-width: 520px) {
